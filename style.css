@@ -1,0 +1,215 @@
+    
+@font-face {
+    font-family: Hanken;
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+  
+.attribution { 
+    font-size: 11px; text-align: center; 
+    color: hsl(228, 45%, 44%);
+}
+
+.cent {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    background-color: white;
+    display: flex;
+    height: 400px;
+    width: 600px;
+    box-shadow: 10px 10px 20px rgb(226, 230, 231);
+}
+
+.box1, .box2 {
+    height: 100%;
+    width: 300px;
+    border: 0px;
+    align-content: center;
+}
+
+.box, .box1 {
+    border-radius: 20px;
+}
+
+.box1 {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    align-content: center;
+}
+
+.ten{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+}
+
+.yresult, .text {
+    color: white;
+    opacity: 0.75;
+}
+
+.res {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: -0.40em;
+    margin-top: 26px;
+}
+
+.resunum {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0) );
+    border: 0;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}
+
+.test {
+    justify-content: center;
+    display: flex;
+}
+
+.g {
+    font-size: 25px;
+    color: white;
+    margin-bottom: -0.2em;
+    font-weight: bold;
+}
+
+.cem {
+    color: white;
+    opacity: 0.40;
+}
+
+.text {
+    margin: 40px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.yresult {
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.sum {
+    text-align: left;
+    padding-left: 30px;
+    padding-bottom: -20px;
+    margin-bottom: 0px;
+    margin-top: -20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: hsl(224, 30%, 27%);
+}
+
+.first {
+    margin-right: -60px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: -40px;
+}
+
+.second {
+    margin-right: 20px;
+    padding-right: -20px;
+}
+
+.reac, .vareac {
+    background-color: hsla(0, 100%, 67%, 0.07);
+}
+
+.memo, .vamemo {
+    background-color: hsla(39, 100%, 56%, 0.07);  
+}
+
+.vaverb {
+    background-color: hsla(166, 100%, 37%, 0.07);
+}
+
+.vavis {
+    background-color: hsla(234, 85%, 45%, 0.07);
+}
+
+.verb {
+    padding-right: 16px;
+    background-color: hsla(166, 100%, 37%, 0.07);
+}
+
+.vis {
+    padding-right: 16px;
+    background-color: hsla(234, 85%, 45%, 0.07);
+}
+  
+p {
+    text-align: center;
+    font-family: Hanken;
+}
+
+ul {
+    position: relative;
+    list-style: none;
+    width: 145px;
+    text-align: center;
+}
+
+.reac, .memo, .verb, .vis {
+    border: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.vareac, .vamemo, .vaverb, .vavis {
+    border: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+ul .reac:before, .memo:before, .verb:before, .vis:before {
+    position: absolute;
+    left: 35px;
+}
+
+ul .reac:before {
+    content: url(./assets/images/icon-reaction.svg);
+}
+  
+ul .memo:before {
+    content: url(./assets/images/icon-memory.svg);
+}
+
+ul .verb:before {
+    content: url(./assets/images/icon-verbal.svg);
+}
+
+ul .vis:before {
+    content: url(./assets/images/icon-visual.svg);
+}
+  
+li {
+    height: 45px;   
+    align-content: center;
+    margin: 10px;
+    font-family: Hanken;
+}
+
+button {
+    font-family: Hanken;
+    height: 45px;
+    width: 240px;
+    border: 0;
+    border-radius: 30px;
+    margin-left: 30px;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    font-size: 16px;
+}
+
+button:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%)); 
+}

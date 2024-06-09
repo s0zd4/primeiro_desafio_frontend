@@ -12,10 +12,12 @@
 .cent {
     display: flex;
     justify-content: center;
+    align-content: center;
 }
 
 .box {
-    margin-top: 60px;
+    justify-content: center;
+    margin-top: 70px;
     margin-bottom: 20px;
     background-color: white;
     display: flex;
@@ -100,9 +102,7 @@
 .sum {
     text-align: left;
     padding-left: 30px;
-    padding-bottom: -20px;
     margin-bottom: 0px;
-    margin-top: -20px;
     font-size: 20px;
     font-weight: bold;
     color: hsl(224, 30%, 27%);
@@ -110,14 +110,15 @@
 
 .first {
     margin-right: -60px;
-    text-align: center;
-    padding-left: 20px;
+    text-align: left;
+    padding-left: 15px;
     padding-right: -40px;
 }
 
 .second {
     margin-right: 20px;
     padding-right: -20px;
+    text-align: right;
 }
 
 .reac, .vareac {
@@ -136,14 +137,22 @@
     background-color: hsla(234, 85%, 45%, 0.07);
 }
 
+.reac {
+    color: hsl(0, 100%, 67%);
+}
+
+.memo {
+    color: hsl(39, 100%, 56%);
+}
+
 .verb {
-    padding-right: 16px;
     background-color: hsla(166, 100%, 37%, 0.07);
+    color: hsl(166, 100%, 37%);
 }
 
 .vis {
-    padding-right: 16px;
     background-color: hsla(234, 85%, 45%, 0.07);
+    color: hsl(234, 85%, 45%);
 }
   
 p {
@@ -154,7 +163,7 @@ p {
 ul {
     position: relative;
     list-style: none;
-    width: 145px;
+    width: 80%;
     text-align: center;
 }
 
@@ -162,12 +171,16 @@ ul {
     border: 0;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    font-weight: bold;
+    padding-left: 40px;
 }
 
 .vareac, .vamemo, .vaverb, .vavis {
     border: 0;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    font-weight: bold;
+    padding-right: 15px;
 }
 
 ul .reac:before, .memo:before, .verb:before, .vis:before {
@@ -204,12 +217,50 @@ button {
     width: 240px;
     border: 0;
     border-radius: 30px;
-    margin-left: 30px;
     color: white;
     background-color: hsl(224, 30%, 27%);
     font-size: 16px;
+    font-weight: bold;
+}
+
+.but {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
 }
 
 button:hover {
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%)); 
+}
+
+.num {
+    opacity: 0.5;
+}
+
+@media (max-width: 650px) {
+
+    .box {
+        display:block;
+        height: 750px;
+        width: 90%;
+        margin-top: 0%;
+        border-radius: 0;
+        margin-bottom: -20px;
+        box-shadow: none;
+    }
+    
+    .box1 {
+        width: 100%;
+        height: 360px;
+        border-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .box2 {
+        width: 100%;
+        height: 360px;
+        align-items: center;
+    }
+ 
 }
